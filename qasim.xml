@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<cv>  
+  <details>
+    <name>Qasim Hassan</name>
+    <age>22</age>
+    <number>07460409132</number>
+    <dob>02-04-1994</dob>
+    <postcode>TW5 9TE</postcode>
+    <email>qas_hassan@live.co.uk</email>
+    <profile>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae iure dolorum fugiat beatae cumque sint asperiores nihil laborum nesciunt aut impedit, tempora soluta, fuga labore rem dolor in at autem.
+    </profile>
+  </details>
+
+  <jobs>
+    <job>
+      <title>Freelance Web Developer</title>
+      <startdate>01-01-2016</startdate>
+      <enddate>01-05-2016</enddate>
+      <description></description>  
+    </job>
+    <job>
+      <title>SDET Trainee</title>
+      <startdate>16-05-2016</startdate>
+      <enddate>Present</enddate>
+      <description></description>
+    </job>
+  </jobs>
+  
+  <education>
+    <university>University of Westminster</university>
+    <degree>BSc Computer Science</degree>
+    <grade>2:1</grade>
+    <graddate>20-06-2015</graddate>   
+  </education>
+</cv>

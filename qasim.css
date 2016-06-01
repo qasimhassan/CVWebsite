@@ -1,0 +1,11 @@
+html {
+    background-color: #e6e9e9;
+}
+
+body {
+    margin: 0 auto;
+    padding: 2em 2em 4em;
+    max-width: 800px;
+    color: firebrick;
+    background-color: cornsilk;
+}
