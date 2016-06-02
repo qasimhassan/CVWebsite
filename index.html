@@ -3,6 +3,11 @@
   <head>
     <title>Qasim Hassan CV</title>
     <!-- <link rel="stylesheet" href="qasim.css"> -->
+    <style>
+      label {
+        display: block;
+      }
+    </style>
   </head>
   <header>
     <h1>Curriculum Vitae</h1>
@@ -16,18 +21,21 @@
   </header>
 
   <body>
+    <!-- Personal Details Section -->
     <section>
       <h1>Personal Details</h1>
       <ul>
         <li>Aged: 22</li>
         <li>Mob: 07460409132</li>
-        <li>DoB: <time datetime="02-04-1994">02-04-1994</time></li>
+        <li>DoB:
+          <time datetime="02-04-1994">02-04-1994</time>
+        </li>
         <li><a href="mailto:qas_hassan@live.co.uk">Send Me a Email</a></li>
       </ul>
       <p>I would describe myself as a reliable, hardworking and determined person equipped with the enthusiasm to tackle new challenges. I possess excellent communication and organization skills with the capability to work using my own initiative. I am also keen to learn new skills through problem solving and believe that I can be a useful asset to your organisation.</p>
       <h3>Personal Skills</h3>
       <ul>
-        <li>Programming language experience with Java, HTML/CSS, JavaScript.</li>
+        <li>Programming language experience with Java, HTML/CSS & JavaScript.</li>
         <li>Server-side progrmming skills using PHP and database programming in SQL.</li>
         <li>Recently completed Comprehensive ASP.NET MVC Udemy course by 3D Buzz.</li>
         <li>Experience with Android mobile applications using Java and iOS mobile applications using Objective-C.</li>
@@ -37,7 +45,9 @@
         <li>Full UK driving license holder.</li>
       </ul>
     </section>
+    <!-- End of Personal Details Section -->
 
+    <!-- Work Experience Section -->
     <section>
       <h1>Work Experience</h1>
       <h2>Freelance Web Developer</h2>
@@ -68,10 +78,12 @@
         <li>Project Life Cycle and Roles.</li>
         <li>Risk Assessment.</li>
         <li>Time Management.</li>
-        <li>Presentation Skills.</li>        
+        <li>Presentation Skills.</li>
       </ul>
     </section>
+    <!-- End of Work Experience Section -->
 
+    <!-- Previous Projects Section -->
     <section>
       <h1>Previous Projects</h1>
       <h2>Salubrious Medical Android Mobile Application</h2>
@@ -98,7 +110,9 @@
         <li>Programmed using C# and various coding algorithms.</li>
       </ul>
     </section>
+    <!-- End of Previous Projects Section -->
 
+    <!-- Education Section -->
     <section>
       <h1>Education</h1>
       <h2>University of Westminster</h2>
@@ -128,6 +142,7 @@
         <li>Media Studies</li>
       </ul>
     </section>
+    <!--End of Education Section -->
 
     <address>
       Written by Qasim Hassan,<br> 
@@ -135,7 +150,35 @@
     </address>
   </body>
   <footer>
-    <time datetime="24-05-2016">24-05-2016</time>
+   
+   <form method="post" action="http://lacedaemon.spartaglobal.com/todos">
+     <label for="title">Title: </label>
+     <input type="text" name="title" id="name">
+     
+     <label for="due">Due: </label>
+     <input type="date" name="due" id="due">
+     
+     <input type="submit" value="Save">
+   </form>
+   
+   <form method="post" action="http://lacedaemon.spartaglobal.com/contactform/test">
+     <label for="name">Name: </label>
+     <input type="text" name="name" id="name" placeholder="Enter name...">
+     
+     <label for="email">Email: </label>
+     <input type="email" name="email" id="email" placeholder="Enter email..">
+     
+     <input type="hidden" value="Qasim Hasasn" name="addressee" id="addressee">
+     
+     <label for="message">Message: </label>
+     <textarea  cols="30" rows="5" name="message" id="message" placeholder="Enter message..."></textarea>
+     
+     <input type="submit" value="Save">
+   </form>
+   
+    <p>Date Created:
+      <time datetime="24-05-2016">24-05-2016</time>
+    </p>
   </footer>
 
 </html>
