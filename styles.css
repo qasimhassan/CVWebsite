@@ -1,11 +1,110 @@
+* {
+  box-sizing: border-box;
+}
+
 html {
-    background-color: #e6e9e9;
+  background-color: #e6e9e9;
 }
 
 body {
-    margin: 0 auto;
-    padding: 2em 2em 4em;
-    max-width: 800px;
-    color: firebrick;
-    background-color: cornsilk;
+  margin: 0 auto;
+  max-width: 800px;
+  background-color: #ffffff;
+  font-family: "Roboto Slab", "Helvetica Neue", sans-serif;
+}
+
+header > h1 {
+  text-align: center;
+  color: white;
+}
+
+header {
+  padding: 1em 2em;
+  background-color: darkslategray;
+}
+
+header > img {
+  border-radius: 150px;
+  position: relative;
+  left: 35%;
+}
+
+#personal {
+  padding: 0em 1em;
+}
+
+#main-navigation {
+  padding-top: 1em;
+}
+
+#main-navigation li {
+  display: inline;
+  padding-left: 0.3em;
+}
+
+#main-navigation li:after {
+  color: white;
+  content: " |";
+}
+
+#main-navigation li:last-child:after {
+  content: "";
+}
+
+#main-navigation a {
+  font-size: 20px;
+  text-decoration: none;
+  color: white;
+}
+
+#main-navigation a:hover {
+  color: #fed136;
+}
+
+#contact {
+  padding: 0em 1em;
+}
+
+label,
+input[type="submit"] {
+  display: block;
+  cursor: pointer;
+  padding 1em 0em;
+}
+
+label {
+  padding: 1em 0em;
+}
+
+#social a {
+  display: block;
+  text-decoration: none;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+footer address {
+  font-style: normal;
+  padding: 1em 0em;
+}
+
+footer {
+  text-align: center;
+}
+
+.btn-submit {
+  text-transform: uppercase;
+  padding: 20px 40px;
+  width: 100%;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  resize: none;
+  padding: 0;
 }
