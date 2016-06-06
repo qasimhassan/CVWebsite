@@ -2,39 +2,43 @@
   box-sizing: border-box;
 }
 
-html {
-  background-color: #e6e9e9;
-}
-
 body {
   margin: 0 auto;
-  max-width: 800px;
+  max-width: 100%;
+  font-size: 16px;
   background-color: #ffffff;
   font-family: "Roboto Slab", "Helvetica Neue", sans-serif;
+}
+
+a {
+  text-decoration: none;
 }
 
 header > h1 {
   text-align: center;
   color: white;
+  font-size: 300%;
+  padding: 5em 0em;
+  font-weight: 400;
+  letter-spacing: 5px;
+  word-spacing: 2px;
 }
 
 header {
   padding: 1em 2em;
-  background-color: darkslategray;
-}
-
-header > img {
-  border-radius: 150px;
-  position: relative;
-  left: 35%;
-}
-
-#personal {
-  padding: 0em 1em;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(1.jpg);
+  background-position: center;
+  background-size: cover;
 }
 
 #main-navigation {
-  padding-top: 1em;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#main-navigation a {
+  font-size: 125%;
+  color: white;
 }
 
 #main-navigation li {
@@ -51,34 +55,84 @@ header > img {
   content: "";
 }
 
-#main-navigation a {
-  font-size: 20px;
-  text-decoration: none;
-  color: white;
-}
-
 #main-navigation a:hover {
-  color: #fed136;
+  color: #1abc9c;
 }
 
-#contact {
-  padding: 0em 1em;
+#personal,
+#work,
+#projects,
+#education {
+  padding: 1em 1em;
+  text-align: center;
 }
 
-label,
-input[type="submit"] {
+#personal h1 {
+  font-size: 200%;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #1abc9c;
+  background-color: #ecf0f1;
+  padding: 0.5em 0em;
+  border-radius: 40px;
+}
+
+#projects h1 {
+  font-size: 200%;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #1abc9c;
+  background-color: #ecf0f1;
+  padding: 0.5em 0em;
+  border-radius: 40px;
+}
+
+#personal h2 {
+  font-size: 150%;
+  font-weight: 200;
+}
+
+#personal p {
+  font-size: 125%;
+  line-height: 1.25;
+}
+
+#work,
+#education {
+  background-color: #ecf0f1;
+}
+
+#work h1 {
+  font-size: 200%;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #1abc9c;
+  background-color: #fff;
+  padding: 0.5em 0em;
+  border-radius: 40px;
+}
+
+#education h1 {
+  font-size: 200%;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #1abc9c;
+  background-color: #fff;
+  padding: 0.5em 0em;
+  border-radius: 40px;
+}
+
+#social > img {
+  border-radius: 150px;
+  margin: 0 auto;
+}
+
+#social ul a {
   display: block;
-  cursor: pointer;
-  padding 1em 0em;
-}
-
-label {
-  padding: 1em 0em;
-}
-
-#social a {
-  display: block;
-  text-decoration: none;
 }
 
 ul {
@@ -95,10 +149,42 @@ footer {
   text-align: center;
 }
 
+footer p {
+  background-color: #1abc9c;
+  color: white;
+  margin: 0 auto;
+  padding: 1em;
+  font-weight: 500;
+  line-height: 1.3;
+}
+
+#contact {
+  padding: 1em 1em;
+}
+
+#contact h1 {
+  text-align: center;
+  font-size: 200%;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #1abc9c;
+  background-color: #ecf0f1;
+  padding: 0.5em 0em;
+  border-radius: 40px;
+}
+
+label {
+  line-height: 1.5;
+  padding: 0.5em 0em;
+}
+
 .btn-submit {
   text-transform: uppercase;
-  padding: 20px 40px;
+  cursor: pointer;
+  padding: 2em;
   width: 100%;
+  margin: 0.5em 0em 3em;
 }
 
 input[type="text"],
@@ -106,5 +192,21 @@ input[type="email"],
 textarea {
   width: 100%;
   resize: none;
-  padding: 0;
+  padding-bottom: 1em;
+}
+
+@media (min-width:820px) {
+  #personal,
+  #work,
+  #education {
+    float: left;
+    width: 50%;
+  }
+  #projects {
+    float: right;
+    width: 50%;
+  }
+  #contact {
+    clear: both;
+  }
 }
